@@ -46,6 +46,12 @@ function AppUI() { // Define el componente funcional AppUI.
       </TodoList>
       
       <CreateTodoButton /> {/* Renderiza el componente CreateTodoButton */}
+      
+      {openModal && (
+        <Modal>
+          la funcionalidad de Agregar ToDo
+        </Modal>
+      )}
     </>
   );
 }
