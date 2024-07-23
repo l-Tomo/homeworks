@@ -8,6 +8,8 @@ import { TodosError } from '../TodosError'; // Importa el componente TodosError 
 import { EmptyTodos } from '../EmptyTodos'; // Importa el componente EmptyTodos desde su archivo.
 import { CreateTodoButton } from '../CreateTodoButton'; // Importa el componente CreateTodoButton desde su archivo.
 import { TodoContext } from '../TodoContext'; // Importa el contexto TodoContext desde su archivo.
+import { Modal } from '../Modal/index'
+import { TodoForm } from '../TodoForm';
 
 function AppUI() { // Define el componente funcional AppUI.
   const { // Usa el hook useContext para extraer valores del contexto TodoContext.
@@ -16,6 +18,7 @@ function AppUI() { // Define el componente funcional AppUI.
     searchedTodos, // Lista de tareas filtradas por la búsqueda.
     completeTodo, // Función para marcar una tarea como completada.
     deleteTodo, // Función para eliminar una tarea.
+    openModal, // abre modal 
   } = React.useContext(TodoContext); // Obtiene los valores desde el contexto TodoContext.
   
   return ( // Devuelve el JSX que define la interfaz de usuario.
@@ -49,7 +52,7 @@ function AppUI() { // Define el componente funcional AppUI.
       
       {openModal && (
         <Modal>
-          la funcionalidad de Agregar ToDo
+          <TodoForm  />
         </Modal>
       )}
     </>
