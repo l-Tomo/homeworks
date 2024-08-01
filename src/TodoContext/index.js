@@ -41,8 +41,8 @@ function TodoProvider({ children }) { // Define el componente funcional TodoProv
     const todoIndex = newTodos.findIndex( // Encuentra el índice de la tarea a completar.
       (todo) => todo.text === text
     );
-    newTodos[todoIndex].completed = true; // Marca la tarea como completada.
-    saveTodos(newTodos); // Guarda las tareas actualizadas en el almacenamiento local.
+    newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
+  saveTodos(newTodos); // Guarda las tareas actualizadas en el almacenamiento local.
   };
 
   const deleteTodo = (text) => { // Función para eliminar una tarea.

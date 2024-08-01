@@ -1,24 +1,24 @@
 .TodoSearch {
-  background: #F9FBFC;
+  background: #000000;
   border-radius: 2px;
-  border: 2px solid #202329;
+  border: 2px solid rgba(9, 245, 38, 1);
   margin: 0 24px;
   height: 64px;
   width: calc(100% - 62px);
   font-size: 24px;
   text-align: center;
-  font-family: 'Montserrat';
+
   font-weight: 400;
-  color: #1E1E1F;
-  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+  color: rgba(9, 245, 38, 1);
+  box-shadow: 0px 5px 50px rgb(119, 243, 134);
 }
 
 .TodoSearch::placeholder {
-  color: #A5A5A5;
+  color: rgba(9, 245, 38, 1);
   font-family: 'Montserrat';
   font-weight: 400;
 }
 
 .TodoSearch:focus {
-  outline-color: #61DAFA;
+  outline-color: rgba(9, 245, 38, 1);
 }

@@ -21,11 +21,10 @@
 
 .Icon-container-delete {
   position: absolute;
-  top: -24px;
   right: 0;
 }
 .Icon-container-delete:hover {
-  color: red;
+  color: green;
 }
 
 .Icon-svg {
@@ -37,5 +36,5 @@
   fill: green;
 }
 .Icon-container-delete:hover .Icon-svg {
-  fill: red;
+  fill: green;
 }

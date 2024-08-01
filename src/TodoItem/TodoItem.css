@@ -1,11 +1,14 @@
 .TodoItem {
-  background-color: #FAFAFA;
+  background-color: #000000;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 24px;
-  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+  border: 2px solid rgba(9, 245, 38, 1);
+}
+.TodoItem:hover {
+  box-shadow: 0px 5px 50px rgba(9, 245, 38, 1);
 }
 
 .TodoItem-p {
