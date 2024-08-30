@@ -10,7 +10,7 @@ function TodoSearch() { // Define el componente funcional TodoSearch.
   
   return ( // Devuelve el JSX que define la interfaz de usuario.
     <input
-      placeholder="Matar a un supermutante" // Placeholder que aparece cuando el input está vacío.
+      placeholder="Recorrer el yermo" // Placeholder que aparece cuando el input está vacío.
       className="TodoSearch" // Asigna la clase CSS "TodoSearch" al input.
       value={searchValue} // Asigna el valor del input al valor de búsqueda actual.
       onChange={(event) => { // Maneja el evento de cambio en el input.
